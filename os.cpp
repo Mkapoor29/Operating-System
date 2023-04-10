@@ -9,21 +9,20 @@ void swap(int *a, int *b) {
 
 int main() 
 {
-   // int num; 
-   // cout<<"Enter number of processes: "; cin>>num;
-   // int p[6][num];
+   int num; 
+   cout<<"Enter number of processes: "; cin>>num;
+   int p[6][num];
 
-   // // dymanic input
-   // cout<<"Enter details of each p: "<<endl;
-   // for(int i = 0; i<num;i++)
-   // {
-   //    cout<<"Enter burst time for p "<<i+1<<" :"; cin>>p[1][i];
-   //    cout<<"Enter arrival time for p "<<i+1<<" :"; cin>>p[2][i];
-   //    p[0][i] = i+1;
-   // }
+   // dymanic input
+   cout<<"Enter details of each p: "<<endl;
+   for(int i = 0; i<num;i++)
+   {
+      cout<<"Enter burst time for p "<<i+1<<" :"; cin>>p[1][i];
+      cout<<"Enter arrival time for p "<<i+1<<" :"; cin>>p[2][i];
+      p[0][i] = i+1;
+   }
 
-   int num = 3;
-   int p[6][num] = {1,2,3,7,4,1,2,4,2};
+  
 
    cout<<"p Id\tBurst Time\tArrival Time "<<endl;
    for(int i = 0; i<num; i++)
